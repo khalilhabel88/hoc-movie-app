@@ -4,7 +4,7 @@ import { Modal, Input, Button } from "reactstrap";
 class ModalComp extends Component {
   state = {
     title: "",
-    firas: "",
+    pic: "",
     rating: 0
   };
   changeHandler = e => {
@@ -41,7 +41,7 @@ class ModalComp extends Component {
           />
           <Input
             type="text"
-            name="firas"
+            name="pic"
             placeholder="Enter a movie poster..."
             onChange={this.changeHandler}
           />

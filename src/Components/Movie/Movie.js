@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody, CardText, CardImg, Col } from "reactstrap";
 import "./Movie.css";
 import Rate from "../SearchBar/Rate";
 const Movie = props => {
-  const { title, firas, rating, year } = props.movie;
+  const { title, pic, rating, } = props.movie;
   return (
     <Col>
       <Card style={{ width: "20rem" }}>
@@ -11,10 +11,10 @@ const Movie = props => {
           <h6 className="title">{title}</h6>
         </CardHeader>
         <CardBody>
-          <CardImg src={firas} className="card-image" />
+          <CardImg src={pic} className="card-image" />
           <CardText>
             <Rate rating={rating} isClickeble={false} />
-            {year}
+            
           </CardText>
         </CardBody>
       </Card>
